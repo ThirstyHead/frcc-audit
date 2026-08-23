@@ -44,8 +44,26 @@
   th { color: #566573; font-size: .8rem; text-transform: uppercase; letter-spacing: .03em; }
   .targets { color: #7b8a8b; font-size: .82rem; word-break: break-all; max-width: 260px; }
   code { background: #f4f6f7; padding: .1rem .35rem; border-radius: 4px; font-size: .85em; }
-  .badge { color: #fff; padding: .15rem .5rem; border-radius: 999px; font-size: .78rem; font-weight: 600; }
   ul.inc { margin: .25rem 0 0; padding-left: 1.2rem; }
+  .note { color: #566573; font-size: .9rem; margin: .25rem 0 .75rem; }
+  table.pages { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  table.pages thead th {
+    position: sticky; top: 0; background: #fdfdfc; z-index: 1;
+    border-bottom: 2px solid #e3e7ea;
+  }
+  table.pages th.n, table.pages td.n { text-align: right; white-space: nowrap; }
+  table.pages td.n.bad { color: #b03a2e; font-weight: 700; }
+  table.pages td.pg { max-width: 0; }
+  table.pages td.pg a { word-break: break-all; }
+  table.pages .pwurl { display: block; color: #7b8a8b; font-size: .8rem; margin-top: .1rem; word-break: break-all; }
+  table.pages td.pg .err { word-break: break-all; }
+  table.pages td.links { white-space: nowrap; text-align: right; }
+  table.pages a.pgrep {
+    color: #2e86c1; text-decoration: none; font-weight: 600;
+    border: 1px solid #cfe6f5; background: #f4fafd; padding: .15rem .5rem; border-radius: 6px;
+  }
+  table.pages a.pgrep:hover { background: #e8f4fb; }
+  table.pages tr.bad td.pg a { color: #b03a2e; }
   footer { margin-top: 2.5rem; border-top: 1px solid #e3e7ea; padding-top: 1rem; font-size: .85rem; color: #566573; }
   footer a { color: #2e86c1; }
   .datamenu { display: flex; flex-wrap: wrap; gap: 1rem; margin: .5rem 0; }
@@ -59,16 +77,16 @@
 
 <div class="meta">
   <span>Last audited: <strong>August 23, 2026</strong> (UTC)</span>
-  <span>Published runs: 2</span>
+  <span>Published runs: 3</span>
   <span>Tooling: <a href="https://github.com/ThirstyHead/audit-frontrange.edu">axe-core + Playwright</a>, run weekly via GitHub Actions</span>
-  <span><span class="delta up">▲ 14 vs last run</span></span>
+  <span><span class="delta flat">no change vs last run</span></span>
 </div>
 
 <h2>Latest results</h2>
 <div class="cards">
   <div class="card"><span class="num">14</span><span class="lbl">Node-level violations</span></div>
   <div class="card"><span class="num">76</span><span class="lbl">Pages audited</span></div>
-  <div class="card"><span class="num">3329</span><span class="lbl">Need manual review</span></div>
+  <div class="card"><span class="num">3328</span><span class="lbl">Need manual review</span></div>
 </div>
 <div class="severities">
       <div class="sevcard" style="border-top:4px solid #b03a2e">
@@ -91,12 +109,15 @@
 <h2>Trend</h2>
 <div>
     <svg viewBox="0 0 680 150" class="spark" role="img" aria-label="Trend of total node-level violations across audit runs">
-      <polyline points="40.0,120.0 640.0,18.0" fill="none" stroke="#2c3e50" stroke-width="2.5" stroke-linejoin="round"/>
+      <polyline points="40.0,120.0 340.0,18.0 640.0,18.0" fill="none" stroke="#2c3e50" stroke-width="2.5" stroke-linejoin="round"/>
       <circle cx="40.0" cy="120.0" r="4" fill="#2c3e50">
          <title>2026-08-21T19:51:07.941Z — 0 node-level violations</title>
        </circle>
-<circle cx="640.0" cy="18.0" r="4" fill="#2c3e50">
+<circle cx="340.0" cy="18.0" r="4" fill="#2c3e50">
          <title>2026-08-23T17:00:13.358Z — 14 node-level violations</title>
+       </circle>
+<circle cx="640.0" cy="18.0" r="4" fill="#2c3e50">
+         <title>2026-08-23T21:11:42.124Z — 14 node-level violations</title>
        </circle>
       <text x="40" y="142" class="axis">2026-08-21</text>
       <text x="640" y="142" class="axis" text-anchor="end">2026-08-23</text>
@@ -104,886 +125,475 @@
     </svg></div>
 
 <h2>Pages</h2>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/" rel="noopener">https://frontrange.edu/</a> <span class="title">“FRCC | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">35 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li>
-        <li><code>video-caption</code> — &lt;video&gt; elements must have captions <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/" rel="noopener">https://frontrange.edu/about/</a> <span class="title">“Learn more about Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">32 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/accreditation.html" rel="noopener">https://frontrange.edu/about/accreditation.html</a> <span class="title">“FRCC | Accredited By The Higher Learning Commission”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/contact-us/" rel="noopener">https://frontrange.edu/about/contact-us/</a> <span class="title">“Contact Information for the Boulder County, Larimer, &amp; Westminster Campuses”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">35 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/equity-inclusion/" rel="noopener">https://frontrange.edu/about/equity-inclusion/</a> <span class="title">“FRCC | Philosophy of Inclusion in Education”</span></h3>
-      <p class="total">2 node-level violations across 2 rules</p>
-      
-        <h4>Critical <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-allowed-attr</code></td>
-              <td>Elements must only use supported ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\32 8648865 .ytmVideoInfoVideoTitle</td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Serious <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-prohibited-attr</code></td>
-              <td>Elements must only use permitted ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\32 8648865 #movie_player</td>
-            </tr>
-          </tbody>
-        </table>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">40 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/facts-figures/" rel="noopener">https://frontrange.edu/about/facts-figures/</a> <span class="title">“Front Range Community College | Facts &amp; Figures”</span></h3>
-      <p class="total">3 node-level violations across 3 rules</p>
-      
-        <h4>Critical <span class="count">2 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-allowed-attr</code></td>
-              <td>Elements must only use supported ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\31 82354362 .ytmVideoInfoVideoTitle</td>
-            </tr>
-            <tr>
-              <td><code>button-name</code></td>
-              <td>Buttons must have discernible text</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\31 82354362 .ytmVideoInfoChannelAvatar</td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Serious <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-prohibited-attr</code></td>
-              <td>Elements must only use permitted ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\31 82354362 #movie_player</td>
-            </tr>
-          </tbody>
-        </table>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">50 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/faqs.html" rel="noopener">https://frontrange.edu/about/faqs.html</a> <span class="title">“General FAQs | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">46 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/frcc-foundation/" rel="noopener">https://frontrange.edu/about/frcc-foundation/</a> <span class="title">“Front Range Community College Foundation”</span></h3>
-      <p class="total">2 node-level violations across 2 rules</p>
-      
-        <h4>Critical <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-allowed-attr</code></td>
-              <td>Elements must only use supported ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\32 33404197 .ytmVideoInfoVideoTitle</td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Serious <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-prohibited-attr</code></td>
-              <td>Elements must only use permitted ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\32 33404197 #movie_player</td>
-            </tr>
-          </tbody>
-        </table>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">38 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/frcc-foundation/giving/donate.html" rel="noopener">https://frontrange.edu/about/frcc-foundation/giving/donate.html</a> <span class="title">“FRCC | Donate to Front Range Community College”</span></h3>
-      <p class="total">1 node-level violations across 1 rules</p>
-      
-        <h4>Serious <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>autocomplete-valid</code></td>
-              <td>autocomplete attribute must be used correctly</td>
-              <td>wcag21aa, wcag135</td>
-              <td>1</td>
-              <td class="targets">#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #address-block-0</td>
-            </tr>
-          </tbody>
-        </table>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>aria-valid-attr-value</code> — ARIA attributes must conform to valid values <span class="count">3 nodes</span></li>
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">55 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li>
-        <li><code>link-in-text-block</code> — Links must be distinguishable without relying on color <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/presidents-office/" rel="noopener">https://frontrange.edu/about/presidents-office/</a> <span class="title">“Office of the President | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">32 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/strategic_plan/" rel="noopener">https://frontrange.edu/about/strategic_plan/</a> <span class="title">“President&#39;s Message | FRCC Strategic Plan: Forward, Together”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">36 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/about/teaching-excellence/" rel="noopener">https://frontrange.edu/about/teaching-excellence/</a> <span class="title">“Front Range Community College | Our Commitment to Teaching Excellence”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/" rel="noopener">https://frontrange.edu/admissions-aid/</a> <span class="title">“Admissions and Financial Aid | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">38 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/academic-placement/" rel="noopener">https://frontrange.edu/admissions-aid/academic-placement/</a> <span class="title">“FRCC | Academic Placement Information For Class Enrollment”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">36 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/admissions-team/" rel="noopener">https://frontrange.edu/admissions-aid/admissions-team/</a> <span class="title">“Admissions, Recruitment &amp; Orientation | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">48 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/credit-for-prior-learning/" rel="noopener">https://frontrange.edu/admissions-aid/credit-for-prior-learning/</a> <span class="title">“Credit For Prior Learning | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">42 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/getting-started/" rel="noopener">https://frontrange.edu/admissions-aid/getting-started/</a> <span class="title">“Learn How to Apply to Become a Student at FRCC”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/parents-and-families.html" rel="noopener">https://frontrange.edu/admissions-aid/parents-and-families.html</a> <span class="title">“Front Range Community College Supports Parents &amp; Families”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/paying-for-college/" rel="noopener">https://frontrange.edu/admissions-aid/paying-for-college/</a> <span class="title">“FRCC | financial aid options for help paying for college”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/paying-for-college/financial-aid/" rel="noopener">https://frontrange.edu/admissions-aid/paying-for-college/financial-aid/</a> <span class="title">“FRCC | Financial Aid for Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">34 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/request-information/" rel="noopener">https://frontrange.edu/admissions-aid/request-information/</a> <span class="title">“FRCC | Request Information &amp; Campus Tours”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">34 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/residency/" rel="noopener">https://frontrange.edu/admissions-aid/residency/</a> <span class="title">“Colorado Residency Requirement For In-State Tuition”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">47 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/admissions-aid/visit-frcc/" rel="noopener">https://frontrange.edu/admissions-aid/visit-frcc/</a> <span class="title">“FRCC | Campus Tours, Events, &amp; Information”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">36 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/business-community/" rel="noopener">https://frontrange.edu/business-community/</a> <span class="title">“FRCC | Customized Employee Training for Businesses &amp; Companies”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">32 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/calendar/" rel="noopener">https://frontrange.edu/calendar/</a> <span class="title">“Calendar”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">37 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/campuses-online/" rel="noopener">https://frontrange.edu/campuses-online/</a> <span class="title">“Front Range Community College - Campus Locations”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">32 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/campuses-online/bcc/" rel="noopener">https://frontrange.edu/campuses-online/bcc/</a> <span class="title">“Front Range Community College - Boulder County Campus in Longmont”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/campuses-online/lc/" rel="noopener">https://frontrange.edu/campuses-online/lc/</a> <span class="title">“FRCC Larimer Campus in Ft. Collins Colorado”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/campuses-online/westminster-campus/" rel="noopener">https://frontrange.edu/campuses-online/westminster-campus/</a> <span class="title">“Front Range Community College - Westminster Campus”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/careers/" rel="noopener">https://frontrange.edu/careers/</a> <span class="title">“Front Range Community College - Careers at FRCC”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">38 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/directory/" rel="noopener">https://frontrange.edu/directory/</a> <span class="title">“FRCC | College Directory - Faculty and Staff”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">39 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/disclaimers-legal-notices/" rel="noopener">https://frontrange.edu/disclaimers-legal-notices/</a> <span class="title">“Front Range Community College - Disclaimers and Legal Notices”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/disclaimers-legal-notices/accessibility-statement.html" rel="noopener">https://frontrange.edu/disclaimers-legal-notices/accessibility-statement.html</a> <span class="title">“Accessibility Statement | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">36 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/espanol/" rel="noopener">https://frontrange.edu/espanol/</a> <span class="title">“Front Range Community College - Información en español”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">28 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/innovation.html" rel="noopener">https://frontrange.edu/innovation.html</a> <span class="title">“Urban Innovation Campus”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">32 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/marketing/" rel="noopener">https://frontrange.edu/marketing/</a> <span class="title">“Strategic Marketing &amp; Communications | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">34 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/" rel="noopener">https://frontrange.edu/programs-courses/</a> <span class="title">“Front Range Community College - Programs &amp; Degrees”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">32 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/academic-calendars/" rel="noopener">https://frontrange.edu/programs-courses/academic-calendars/</a> <span class="title">“Front Range Community College - Academic Calendar”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">118 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/apprenticeships/" rel="noopener">https://frontrange.edu/programs-courses/apprenticeships/</a> <span class="title">“Front Range Community College | Apprenticeships”</span></h3>
-      <p class="total">2 node-level violations across 2 rules</p>
-      
-        <h4>Critical <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-allowed-attr</code></td>
-              <td>Elements must only use supported ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\36 75499389 .ytmVideoInfoVideoTitle</td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Serious <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-prohibited-attr</code></td>
-              <td>Elements must only use permitted ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\36 75499389 #movie_player</td>
-            </tr>
-          </tbody>
-        </table>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">35 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/bachelorsdegrees.html" rel="noopener">https://frontrange.edu/programs-courses/bachelorsdegrees.html</a> <span class="title">“Bachelor&#39;s Degrees at Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/concurrent-enrollment/" rel="noopener">https://frontrange.edu/programs-courses/concurrent-enrollment/</a> <span class="title">“College Programs for High School Students”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">45 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/esl/" rel="noopener">https://frontrange.edu/programs-courses/esl/</a> <span class="title">“English As A Second Language (ESL) Classes for Individuals | FRCC”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">34 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/gateway-to-college/" rel="noopener">https://frontrange.edu/programs-courses/gateway-to-college/</a> <span class="title">“FRCC | Gateway to College - High School Program”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">37 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/ged-testing/" rel="noopener">https://frontrange.edu/programs-courses/ged-testing/</a> <span class="title">“Front Range Community College - GED Test Colorado”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">76 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/honors-program/" rel="noopener">https://frontrange.edu/programs-courses/honors-program/</a> <span class="title">“Front Range Community College - College Honors Programs”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">35 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/internships.html" rel="noopener">https://frontrange.edu/programs-courses/internships.html</a> <span class="title">“Internships at Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/program-finder.html" rel="noopener">https://frontrange.edu/programs-courses/program-finder.html</a> <span class="title">“FRCC | Front Range Community College A-Z Program List”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">249 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/register/" rel="noopener">https://frontrange.edu/programs-courses/register/</a> <span class="title">“Front Range Community College - Register for Classes”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">42 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/programs-courses/register/class-schedule/" rel="noopener">https://frontrange.edu/programs-courses/register/class-schedule/</a> <span class="title">“Front Range Community College | Class Schedule”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">41 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/search/" rel="noopener">https://frontrange.edu/search/</a> <span class="title">“Search”</span></h3>
-      <p class="total">2 node-level violations across 2 rules</p>
-      
-        <h4>Critical <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-allowed-attr</code></td>
-              <td>Elements must only use supported ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#ousearchq</td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Serious <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-prohibited-attr</code></td>
-              <td>Elements must only use permitted ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#ou-search-autocomplete-div</td>
-            </tr>
-          </tbody>
-        </table>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">32 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/" rel="noopener">https://frontrange.edu/student-experience/</a> <span class="title">“Student Experience &amp; Support | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">32 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/academic-support/" rel="noopener">https://frontrange.edu/student-experience/academic-support/</a> <span class="title">“Front Range Community College - Academic Support Services”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/academic-support/libraries.html" rel="noopener">https://frontrange.edu/student-experience/academic-support/libraries.html</a> <span class="title">“College Hill, Harmony, &amp; Boulder County Libraries”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">34 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/advising/" rel="noopener">https://frontrange.edu/student-experience/advising/</a> <span class="title">“COMPASS Advising | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">58 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/alumni-resources/" rel="noopener">https://frontrange.edu/student-experience/alumni-resources/</a> <span class="title">“Alumni Network | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">44 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/campus-security/" rel="noopener">https://frontrange.edu/student-experience/campus-security/</a> <span class="title">“Campus Safety | Front Range Community College”</span></h3>
-      <p class="total">2 node-level violations across 2 rules</p>
-      
-        <h4>Critical <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-allowed-attr</code></td>
-              <td>Elements must only use supported ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\35 31724025 .ytmVideoInfoVideoTitle</td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Serious <span class="count">1 nodes</span></h4>
-        <table>
-          <thead><tr><th>Rule</th><th>Requirement</th><th>WCAG</th><th>Nodes</th><th>Examples</th></tr></thead>
-          <tbody>
-          
-            <tr>
-              <td><code>aria-prohibited-attr</code></td>
-              <td>Elements must only use permitted ARIA attributes</td>
-              <td>wcag2a, wcag412</td>
-              <td>1</td>
-              <td class="targets">#\35 31724025 #movie_player</td>
-            </tr>
-          </tbody>
-        </table>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">57 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/campus-security/report-a-concern-incident.html" rel="noopener">https://frontrange.edu/student-experience/campus-security/report-a-concern-incident.html</a> <span class="title">“Report a Concern or Incident | Campus Security | FRCC”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">44 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/campus-stores/" rel="noopener">https://frontrange.edu/student-experience/campus-stores/</a> <span class="title">“Buy and Rent Books Online from Front Range Bookstores”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">43 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/career-services/" rel="noopener">https://frontrange.edu/student-experience/career-services/</a> <span class="title">“Front Range Community College - Career Services”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">43 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/current-students.html" rel="noopener">https://frontrange.edu/student-experience/current-students.html</a> <span class="title">“Resources For Current Students | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/dss/" rel="noopener">https://frontrange.edu/student-experience/dss/</a> <span class="title">“Disability Support Services | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">35 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/graduation/" rel="noopener">https://frontrange.edu/student-experience/graduation/</a> <span class="title">“Graduate From Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">49 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/registrar/" rel="noopener">https://frontrange.edu/student-experience/registrar/</a> <span class="title">“Office of the Registrar | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">53 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-life/" rel="noopener">https://frontrange.edu/student-experience/student-life/</a> <span class="title">“Student Life &amp; Involvement | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">33 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-life/wolf-welcome.html" rel="noopener">https://frontrange.edu/student-experience/student-life/wolf-welcome.html</a> <span class="title">“Wolf Welcome at Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">44 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-rights-responsibilities/" rel="noopener">https://frontrange.edu/student-experience/student-rights-responsibilities/</a> <span class="title">“FRCC | Student Rights &amp; Responsibilities”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">34 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-service-hours.html" rel="noopener">https://frontrange.edu/student-experience/student-service-hours.html</a> <span class="title">“Front Range Community College | Back-to-School Hours”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">34 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-stories/" rel="noopener">https://frontrange.edu/student-experience/student-stories/</a> <span class="title">“Student Stories”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">39 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-stories/giovanni-hernandez.html" rel="noopener">https://frontrange.edu/student-experience/student-stories/giovanni-hernandez.html</a> <span class="title">“Giovanni Hernandez”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">40 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-stories/monica-martinez.html" rel="noopener">https://frontrange.edu/student-experience/student-stories/monica-martinez.html</a> <span class="title">“Monica Martinez”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">40 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-stories/quinlyn-sloan.html" rel="noopener">https://frontrange.edu/student-experience/student-stories/quinlyn-sloan.html</a> <span class="title">“Quinlyn Sloan”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">40 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-stories/reece-moellenhoff.html" rel="noopener">https://frontrange.edu/student-experience/student-stories/reece-moellenhoff.html</a> <span class="title">“Reece Moellenhoff”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">40 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/student-stories/zoey-hesnault-thalken.html" rel="noopener">https://frontrange.edu/student-experience/student-stories/zoey-hesnault-thalken.html</a> <span class="title">“Zoey Hesnault-Thalken”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">40 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/support-services/" rel="noopener">https://frontrange.edu/student-experience/support-services/</a> <span class="title">“Front Range Community College - Student Support Services”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">41 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/transfer-planning/" rel="noopener">https://frontrange.edu/student-experience/transfer-planning/</a> <span class="title">“Front Range Community College - Transfer Out from FRCC”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">55 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
-
-    <section class="page">
-      <h3><a href="https://frontrange.edu/student-experience/wolf-central.html" rel="noopener">https://frontrange.edu/student-experience/wolf-central.html</a> <span class="title">“Wolf Central | Front Range Community College”</span></h3>
-      <p class="total">0 node-level violations across 0 rules</p>
-      <p class="clean">✓ No axe violations found on this page.</p>
-      <h4>Needs manual review</h4><ul class="inc">
-        <li><code>color-contrast</code> — Elements must meet minimum color contrast ratio thresholds <span class="count">51 nodes</span></li>
-        <li><code>duplicate-id-aria</code> — IDs used in ARIA and labels must be unique <span class="count">1 nodes</span></li></ul>
-    </section>
+<p class="note">Every page audited in this run. “Audit report” opens that page's full axe report — violations, needs-review, and passes, with node-level detail.</p>
+
+<table class="pages">
+  <thead><tr><th class="pg">Page</th><th class="n">Violations</th><th class="n">Needs review</th><th>Report</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/" rel="noopener">FRCC | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/</span></td>
+      <td class="n">0</td>
+      <td class="n">37</td>
+      <td class="links"><a class="pgrep" href="pages/home.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/about/" rel="noopener">Learn more about Front Range Community College</a> <span class="pwurl">https://frontrange.edu/about/</span></td>
+      <td class="n">0</td>
+      <td class="n">33</td>
+      <td class="links"><a class="pgrep" href="pages/about.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/about/accreditation.html" rel="noopener">FRCC | Accredited By The Higher Learning Commission</a> <span class="pwurl">https://frontrange.edu/about/accreditation.html</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/about-accreditation-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/about/contact-us/" rel="noopener">Contact Information for the Boulder County, Larimer, &amp; Westminster Campuses</a> <span class="pwurl">https://frontrange.edu/about/contact-us/</span></td>
+      <td class="n">0</td>
+      <td class="n">36</td>
+      <td class="links"><a class="pgrep" href="pages/about-contact-us.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://frontrange.edu/about/equity-inclusion/" rel="noopener">FRCC | Philosophy of Inclusion in Education</a> <span class="pwurl">https://frontrange.edu/about/equity-inclusion/</span></td>
+      <td class="n bad">2</td>
+      <td class="n">41</td>
+      <td class="links"><a class="pgrep" href="pages/about-equity-inclusion.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://frontrange.edu/about/facts-figures/" rel="noopener">Front Range Community College | Facts &amp; Figures</a> <span class="pwurl">https://frontrange.edu/about/facts-figures/</span></td>
+      <td class="n bad">3</td>
+      <td class="n">51</td>
+      <td class="links"><a class="pgrep" href="pages/about-facts-figures.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/about/faqs.html" rel="noopener">General FAQs | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/about/faqs.html</span></td>
+      <td class="n">0</td>
+      <td class="n">47</td>
+      <td class="links"><a class="pgrep" href="pages/about-faqs-html.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://frontrange.edu/about/frcc-foundation/" rel="noopener">Front Range Community College Foundation</a> <span class="pwurl">https://frontrange.edu/about/frcc-foundation/</span></td>
+      <td class="n bad">2</td>
+      <td class="n">39</td>
+      <td class="links"><a class="pgrep" href="pages/about-frcc-foundation.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://frontrange.edu/about/frcc-foundation/giving/donate.html" rel="noopener">FRCC | Donate to Front Range Community College</a> <span class="pwurl">https://frontrange.edu/about/frcc-foundation/giving/donate.html</span></td>
+      <td class="n bad">1</td>
+      <td class="n">59</td>
+      <td class="links"><a class="pgrep" href="pages/about-frcc-foundation-giving-donate-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/about/presidents-office/" rel="noopener">Office of the President | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/about/presidents-office/</span></td>
+      <td class="n">0</td>
+      <td class="n">33</td>
+      <td class="links"><a class="pgrep" href="pages/about-presidents-office.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/about/strategic_plan/" rel="noopener">President&#39;s Message | FRCC Strategic Plan: Forward, Together</a> <span class="pwurl">https://frontrange.edu/about/strategic_plan/</span></td>
+      <td class="n">0</td>
+      <td class="n">37</td>
+      <td class="links"><a class="pgrep" href="pages/about-strategic-plan.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/about/teaching-excellence/" rel="noopener">Front Range Community College | Our Commitment to Teaching Excellence</a> <span class="pwurl">https://frontrange.edu/about/teaching-excellence/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/about-teaching-excellence.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/" rel="noopener">Admissions and Financial Aid | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/admissions-aid/</span></td>
+      <td class="n">0</td>
+      <td class="n">39</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/academic-placement/" rel="noopener">FRCC | Academic Placement Information For Class Enrollment</a> <span class="pwurl">https://frontrange.edu/admissions-aid/academic-placement/</span></td>
+      <td class="n">0</td>
+      <td class="n">37</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-academic-placement.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/admissions-team/" rel="noopener">Admissions, Recruitment &amp; Orientation | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/admissions-aid/admissions-team/</span></td>
+      <td class="n">0</td>
+      <td class="n">49</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-admissions-team.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/credit-for-prior-learning/" rel="noopener">Credit For Prior Learning | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/admissions-aid/credit-for-prior-learning/</span></td>
+      <td class="n">0</td>
+      <td class="n">43</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-credit-for-prior-learning.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/getting-started/" rel="noopener">Learn How to Apply to Become a Student at FRCC</a> <span class="pwurl">https://frontrange.edu/admissions-aid/getting-started/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-getting-started.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/parents-and-families.html" rel="noopener">Front Range Community College Supports Parents &amp; Families</a> <span class="pwurl">https://frontrange.edu/admissions-aid/parents-and-families.html</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-parents-and-families-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/paying-for-college/" rel="noopener">FRCC | financial aid options for help paying for college</a> <span class="pwurl">https://frontrange.edu/admissions-aid/paying-for-college/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-paying-for-college.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/paying-for-college/financial-aid/" rel="noopener">FRCC | Financial Aid for Community College</a> <span class="pwurl">https://frontrange.edu/admissions-aid/paying-for-college/financial-aid/</span></td>
+      <td class="n">0</td>
+      <td class="n">35</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-paying-for-college-financial-aid.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/request-information/" rel="noopener">FRCC | Request Information &amp; Campus Tours</a> <span class="pwurl">https://frontrange.edu/admissions-aid/request-information/</span></td>
+      <td class="n">0</td>
+      <td class="n">35</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-request-information.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/residency/" rel="noopener">Colorado Residency Requirement For In-State Tuition</a> <span class="pwurl">https://frontrange.edu/admissions-aid/residency/</span></td>
+      <td class="n">0</td>
+      <td class="n">48</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-residency.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/admissions-aid/visit-frcc/" rel="noopener">FRCC | Campus Tours, Events, &amp; Information</a> <span class="pwurl">https://frontrange.edu/admissions-aid/visit-frcc/</span></td>
+      <td class="n">0</td>
+      <td class="n">37</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-aid-visit-frcc.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/business-community/" rel="noopener">FRCC | Customized Employee Training for Businesses &amp; Companies</a> <span class="pwurl">https://frontrange.edu/business-community/</span></td>
+      <td class="n">0</td>
+      <td class="n">33</td>
+      <td class="links"><a class="pgrep" href="pages/business-community.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/calendar/" rel="noopener">Calendar</a> <span class="pwurl">https://frontrange.edu/calendar/</span></td>
+      <td class="n">0</td>
+      <td class="n">38</td>
+      <td class="links"><a class="pgrep" href="pages/calendar.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/campuses-online/" rel="noopener">Front Range Community College - Campus Locations</a> <span class="pwurl">https://frontrange.edu/campuses-online/</span></td>
+      <td class="n">0</td>
+      <td class="n">33</td>
+      <td class="links"><a class="pgrep" href="pages/campuses-online.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/campuses-online/bcc/" rel="noopener">Front Range Community College - Boulder County Campus in Longmont</a> <span class="pwurl">https://frontrange.edu/campuses-online/bcc/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/campuses-online-bcc.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/campuses-online/lc/" rel="noopener">FRCC Larimer Campus in Ft. Collins Colorado</a> <span class="pwurl">https://frontrange.edu/campuses-online/lc/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/campuses-online-lc.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/campuses-online/westminster-campus/" rel="noopener">Front Range Community College - Westminster Campus</a> <span class="pwurl">https://frontrange.edu/campuses-online/westminster-campus/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/campuses-online-westminster-campus.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/careers/" rel="noopener">Front Range Community College - Careers at FRCC</a> <span class="pwurl">https://frontrange.edu/careers/</span></td>
+      <td class="n">0</td>
+      <td class="n">38</td>
+      <td class="links"><a class="pgrep" href="pages/careers.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/directory/" rel="noopener">FRCC | College Directory - Faculty and Staff</a> <span class="pwurl">https://frontrange.edu/directory/</span></td>
+      <td class="n">0</td>
+      <td class="n">40</td>
+      <td class="links"><a class="pgrep" href="pages/directory.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/disclaimers-legal-notices/" rel="noopener">Front Range Community College - Disclaimers and Legal Notices</a> <span class="pwurl">https://frontrange.edu/disclaimers-legal-notices/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/disclaimers-legal-notices.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/disclaimers-legal-notices/accessibility-statement.html" rel="noopener">Accessibility Statement | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/disclaimers-legal-notices/accessibility-statement.html</span></td>
+      <td class="n">0</td>
+      <td class="n">37</td>
+      <td class="links"><a class="pgrep" href="pages/disclaimers-legal-notices-accessibility-statement-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/espanol/" rel="noopener">Front Range Community College - Información en español</a> <span class="pwurl">https://frontrange.edu/espanol/</span></td>
+      <td class="n">0</td>
+      <td class="n">28</td>
+      <td class="links"><a class="pgrep" href="pages/espanol.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/innovation.html" rel="noopener">Urban Innovation Campus</a> <span class="pwurl">https://frontrange.edu/innovation.html</span></td>
+      <td class="n">0</td>
+      <td class="n">33</td>
+      <td class="links"><a class="pgrep" href="pages/innovation-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/marketing/" rel="noopener">Strategic Marketing &amp; Communications | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/marketing/</span></td>
+      <td class="n">0</td>
+      <td class="n">35</td>
+      <td class="links"><a class="pgrep" href="pages/marketing.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/" rel="noopener">Front Range Community College - Programs &amp; Degrees</a> <span class="pwurl">https://frontrange.edu/programs-courses/</span></td>
+      <td class="n">0</td>
+      <td class="n">33</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/academic-calendars/" rel="noopener">Front Range Community College - Academic Calendar</a> <span class="pwurl">https://frontrange.edu/programs-courses/academic-calendars/</span></td>
+      <td class="n">0</td>
+      <td class="n">119</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-academic-calendars.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/apprenticeships/" rel="noopener">Front Range Community College | Apprenticeships</a> <span class="pwurl">https://frontrange.edu/programs-courses/apprenticeships/</span></td>
+      <td class="n bad">2</td>
+      <td class="n">36</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-apprenticeships.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/bachelorsdegrees.html" rel="noopener">Bachelor&#39;s Degrees at Front Range Community College</a> <span class="pwurl">https://frontrange.edu/programs-courses/bachelorsdegrees.html</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-bachelorsdegrees-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/concurrent-enrollment/" rel="noopener">College Programs for High School Students</a> <span class="pwurl">https://frontrange.edu/programs-courses/concurrent-enrollment/</span></td>
+      <td class="n">0</td>
+      <td class="n">46</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-concurrent-enrollment.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/esl/" rel="noopener">English As A Second Language (ESL) Classes for Individuals | FRCC</a> <span class="pwurl">https://frontrange.edu/programs-courses/esl/</span></td>
+      <td class="n">0</td>
+      <td class="n">35</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-esl.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/gateway-to-college/" rel="noopener">FRCC | Gateway to College - High School Program</a> <span class="pwurl">https://frontrange.edu/programs-courses/gateway-to-college/</span></td>
+      <td class="n">0</td>
+      <td class="n">38</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-gateway-to-college.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/ged-testing/" rel="noopener">Front Range Community College - GED Test Colorado</a> <span class="pwurl">https://frontrange.edu/programs-courses/ged-testing/</span></td>
+      <td class="n">0</td>
+      <td class="n">77</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-ged-testing.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/honors-program/" rel="noopener">Front Range Community College - College Honors Programs</a> <span class="pwurl">https://frontrange.edu/programs-courses/honors-program/</span></td>
+      <td class="n">0</td>
+      <td class="n">36</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-honors-program.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/internships.html" rel="noopener">Internships at Front Range Community College</a> <span class="pwurl">https://frontrange.edu/programs-courses/internships.html</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-internships-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/program-finder.html" rel="noopener">FRCC | Front Range Community College A-Z Program List</a> <span class="pwurl">https://frontrange.edu/programs-courses/program-finder.html</span></td>
+      <td class="n">0</td>
+      <td class="n">250</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-program-finder-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/register/" rel="noopener">Front Range Community College - Register for Classes</a> <span class="pwurl">https://frontrange.edu/programs-courses/register/</span></td>
+      <td class="n">0</td>
+      <td class="n">43</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-register.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/programs-courses/register/class-schedule/" rel="noopener">Front Range Community College | Class Schedule</a> <span class="pwurl">https://frontrange.edu/programs-courses/register/class-schedule/</span></td>
+      <td class="n">0</td>
+      <td class="n">42</td>
+      <td class="links"><a class="pgrep" href="pages/programs-courses-register-class-schedule.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://frontrange.edu/search/" rel="noopener">Search</a> <span class="pwurl">https://frontrange.edu/search/</span></td>
+      <td class="n bad">2</td>
+      <td class="n">33</td>
+      <td class="links"><a class="pgrep" href="pages/search.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/" rel="noopener">Student Experience &amp; Support | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/</span></td>
+      <td class="n">0</td>
+      <td class="n">33</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/academic-support/" rel="noopener">Front Range Community College - Academic Support Services</a> <span class="pwurl">https://frontrange.edu/student-experience/academic-support/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-academic-support.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/academic-support/libraries.html" rel="noopener">College Hill, Harmony, &amp; Boulder County Libraries</a> <span class="pwurl">https://frontrange.edu/student-experience/academic-support/libraries.html</span></td>
+      <td class="n">0</td>
+      <td class="n">35</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-academic-support-libraries-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/advising/" rel="noopener">COMPASS Advising | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/advising/</span></td>
+      <td class="n">0</td>
+      <td class="n">59</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-advising.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/alumni-resources/" rel="noopener">Alumni Network | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/alumni-resources/</span></td>
+      <td class="n">0</td>
+      <td class="n">45</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-alumni-resources.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://frontrange.edu/student-experience/campus-security/" rel="noopener">Campus Safety | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/campus-security/</span></td>
+      <td class="n bad">2</td>
+      <td class="n">58</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-campus-security.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/campus-security/report-a-concern-incident.html" rel="noopener">Report a Concern or Incident | Campus Security | FRCC</a> <span class="pwurl">https://frontrange.edu/student-experience/campus-security/report-a-concern-incident.html</span></td>
+      <td class="n">0</td>
+      <td class="n">45</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-campus-security-report-a-concern-incident-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/campus-stores/" rel="noopener">Buy and Rent Books Online from Front Range Bookstores</a> <span class="pwurl">https://frontrange.edu/student-experience/campus-stores/</span></td>
+      <td class="n">0</td>
+      <td class="n">44</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-campus-stores.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/career-services/" rel="noopener">Front Range Community College - Career Services</a> <span class="pwurl">https://frontrange.edu/student-experience/career-services/</span></td>
+      <td class="n">0</td>
+      <td class="n">44</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-career-services.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/current-students.html" rel="noopener">Resources For Current Students | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/current-students.html</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-current-students-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/dss/" rel="noopener">Disability Support Services | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/dss/</span></td>
+      <td class="n">0</td>
+      <td class="n">36</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-dss.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/graduation/" rel="noopener">Graduate From Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/graduation/</span></td>
+      <td class="n">0</td>
+      <td class="n">50</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-graduation.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/registrar/" rel="noopener">Office of the Registrar | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/registrar/</span></td>
+      <td class="n">0</td>
+      <td class="n">54</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-registrar.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-life/" rel="noopener">Student Life &amp; Involvement | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/student-life/</span></td>
+      <td class="n">0</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-life.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-life/wolf-welcome.html" rel="noopener">Wolf Welcome at Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/student-life/wolf-welcome.html</span></td>
+      <td class="n">0</td>
+      <td class="n">45</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-life-wolf-welcome-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-rights-responsibilities/" rel="noopener">FRCC | Student Rights &amp; Responsibilities</a> <span class="pwurl">https://frontrange.edu/student-experience/student-rights-responsibilities/</span></td>
+      <td class="n">0</td>
+      <td class="n">35</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-rights-responsibilities.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-service-hours.html" rel="noopener">Front Range Community College | Back-to-School Hours</a> <span class="pwurl">https://frontrange.edu/student-experience/student-service-hours.html</span></td>
+      <td class="n">0</td>
+      <td class="n">35</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-service-hours-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-stories/" rel="noopener">Student Stories</a> <span class="pwurl">https://frontrange.edu/student-experience/student-stories/</span></td>
+      <td class="n">0</td>
+      <td class="n">40</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-stories.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-stories/giovanni-hernandez.html" rel="noopener">Giovanni Hernandez</a> <span class="pwurl">https://frontrange.edu/student-experience/student-stories/giovanni-hernandez.html</span></td>
+      <td class="n">0</td>
+      <td class="n">41</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-stories-giovanni-hernandez-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-stories/monica-martinez.html" rel="noopener">Monica Martinez</a> <span class="pwurl">https://frontrange.edu/student-experience/student-stories/monica-martinez.html</span></td>
+      <td class="n">0</td>
+      <td class="n">41</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-stories-monica-martinez-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-stories/quinlyn-sloan.html" rel="noopener">Quinlyn Sloan</a> <span class="pwurl">https://frontrange.edu/student-experience/student-stories/quinlyn-sloan.html</span></td>
+      <td class="n">0</td>
+      <td class="n">41</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-stories-quinlyn-sloan-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-stories/reece-moellenhoff.html" rel="noopener">Reece Moellenhoff</a> <span class="pwurl">https://frontrange.edu/student-experience/student-stories/reece-moellenhoff.html</span></td>
+      <td class="n">0</td>
+      <td class="n">41</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-stories-reece-moellenhoff-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/student-stories/zoey-hesnault-thalken.html" rel="noopener">Zoey Hesnault-Thalken</a> <span class="pwurl">https://frontrange.edu/student-experience/student-stories/zoey-hesnault-thalken.html</span></td>
+      <td class="n">0</td>
+      <td class="n">41</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-student-stories-zoey-hesnault-thalken-html.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/support-services/" rel="noopener">Front Range Community College - Student Support Services</a> <span class="pwurl">https://frontrange.edu/student-experience/support-services/</span></td>
+      <td class="n">0</td>
+      <td class="n">42</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-support-services.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/transfer-planning/" rel="noopener">Front Range Community College - Transfer Out from FRCC</a> <span class="pwurl">https://frontrange.edu/student-experience/transfer-planning/</span></td>
+      <td class="n">0</td>
+      <td class="n">56</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-transfer-planning.html">Audit report</a></td>
+    </tr>
+    <tr>
+      <td class="pg"><a href="https://frontrange.edu/student-experience/wolf-central.html" rel="noopener">Wolf Central | Front Range Community College</a> <span class="pwurl">https://frontrange.edu/student-experience/wolf-central.html</span></td>
+      <td class="n">0</td>
+      <td class="n">52</td>
+      <td class="links"><a class="pgrep" href="pages/student-experience-wolf-central-html.html">Audit report</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>Data</h2>
 <div class="datamenu">
   <a href="latest.json">latest.json</a>
   <a href="history.json">history.json</a>
-  <a href="https://github.com/ThirstyHead/frcc-audit/blob/main/reports/axe-2026-08-23T17-00-13-358Z.json">Raw report (latest)</a>
+  <a href="https://github.com/ThirstyHead/frcc-audit/blob/main/reports/axe-2026-08-23T21-11-42-124Z.json">Raw report (latest)</a>
   <a href="https://github.com/ThirstyHead/frcc-audit/tree/main/reports">All raw reports</a>
 </div>
 
@@ -995,7 +605,7 @@
   Automated tooling detects only a subset of accessibility failures and does not replace
   manual or assistive-technology testing. “Needs manual review” items are results axe
   could not determine automatically.</p>
-  <p>Generated 2026-08-23T17:01:24.050Z · <a href="https://thirstyhead.com/frcc-audit/">thirstyhead.com/frcc-audit</a></p>
+  <p>Generated 2026-08-23T21:38:38.720Z · <a href="https://thirstyhead.com/frcc-audit/">thirstyhead.com/frcc-audit</a></p>
 </footer>
 </body>
 </html>
