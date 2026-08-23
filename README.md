@@ -4,7 +4,7 @@ Public WCAG 2.1 AA audit results for [frontrange.edu](https://frontrange.edu) (F
 
 **You are looking at a data + site repository, not source code.** Contents are published automatically by a GitHub Actions workflow in the [audit tooling repo](https://github.com/ThirstyHead/audit-frontrange.edu) on a weekly schedule.
 
-- **🌐 [Report site](https://thirstyhead.github.io/frcc-audit/)** — rendered results + trend (GitHub Pages, served from `docs/`)
+- **🌐 [Report site](https://thirstyhead.com/frcc-audit/)** — rendered results + trend (GitHub Pages, served from `docs/`)
 - **`reports/`** — raw axe-core report JSON, one file per run (`axe-<UTC timestamp>.json`)
 - **`docs/latest.json` / `docs/history.json`** — machine-readable latest run and full time series
 
