@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-08-23T21:38:38.720Z",
+  "siteGenerated": "2026-08-24T09:32:40.281Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-frontrange.edu",
   "report": {
-    "generated": "2026-08-23T21:11:42.124Z",
+    "generated": "2026-08-24T09:32:39.266Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -192,7 +192,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 58079533 .ytmVideoInfoVideoTitle"
+              "#\\38 28184760 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -206,7 +206,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 58079533 #movie_player"
+              "#\\38 28184760 #movie_player"
             ]
           }
         ],
@@ -259,7 +259,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 84625234 .ytmVideoInfoVideoTitle"
+              "#\\37 31392416 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -273,7 +273,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 84625234 #movie_player"
+              "#\\37 31392416 #movie_player"
             ]
           },
           {
@@ -287,7 +287,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 84625234 .ytmVideoInfoChannelAvatar"
+              "#\\37 31392416 .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
@@ -378,7 +378,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 01831677 .ytmVideoInfoVideoTitle"
+              "#\\31 86772927 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -392,7 +392,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 01831677 #movie_player"
+              "#\\31 86772927 #movie_player"
             ]
           }
         ],
@@ -462,8 +462,8 @@
             "nodes": 3,
             "firstTargets": [
               "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 .comment-box",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1787519192355__18",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1787519192355__23"
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1787563566178__18",
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1787563566179__23"
             ]
           },
           {
@@ -1602,7 +1602,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 09099223 .ytmVideoInfoVideoTitle"
+              "#\\32 01850491 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -1616,7 +1616,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 09099223 #movie_player"
+              "#\\32 01850491 #movie_player"
             ]
           }
         ],
@@ -2306,7 +2306,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 62585245 .ytmVideoInfoVideoTitle"
+              "#\\37 86942473 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -2320,7 +2320,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 62585245 #movie_player"
+              "#\\37 86942473 #movie_player"
             ]
           }
         ],
