@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-08-31T12:01:54.408Z",
+  "siteGenerated": "2026-09-07T10:55:29.931Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-frontrange.edu",
   "report": {
-    "generated": "2026-08-31T12:01:53.756Z",
+    "generated": "2026-09-07T10:55:29.231Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -115,7 +115,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 33,
+            "nodes": 34,
             "firstTargets": [
               ".cluster > li:nth-child(1) > strong > a",
               ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
@@ -192,7 +192,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\37 79224785 .ytmVideoInfoVideoTitle"
+              "#\\31 18966895 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -206,7 +206,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\37 79224785 #movie_player"
+              "#\\31 18966895 #movie_player"
             ]
           }
         ],
@@ -259,7 +259,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 38431623 .ytmVideoInfoVideoTitle"
+              "#\\38 23317375 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -273,7 +273,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 38431623 #movie_player"
+              "#\\38 23317375 #movie_player"
             ]
           },
           {
@@ -287,7 +287,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 38431623 .ytmVideoInfoChannelAvatar"
+              "#\\38 23317375 .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
@@ -378,7 +378,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\36 2754750 .ytmVideoInfoVideoTitle"
+              "#\\32 65304916 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -392,7 +392,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\36 2754750 #movie_player"
+              "#\\32 65304916 #movie_player"
             ]
           }
         ],
@@ -462,8 +462,8 @@
             "nodes": 3,
             "firstTargets": [
               "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 .comment-box",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1788177388231__18",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1788177388232__23"
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1788778171285__18",
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1788778171286__23"
             ]
           },
           {
@@ -1019,7 +1019,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 36,
+            "nodes": 37,
             "firstTargets": [
               ".cluster > li:nth-child(1) > strong > a",
               ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
@@ -1372,7 +1372,7 @@
       },
       {
         "url": "https://frontrange.edu/disclaimers-legal-notices/accessibility-statement.html",
-        "title": "Accessibility Statement | Front Range Community College",
+        "title": "Digital Accessibility Philosophy | Front Range Community College",
         "finalUrl": "https://frontrange.edu/disclaimers-legal-notices/accessibility-statement.html",
         "slug": "disclaimers-legal-notices-accessibility-statement-html",
         "violations": [],
@@ -1386,7 +1386,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 36,
+            "nodes": 38,
             "firstTargets": [
               ".cluster > li:nth-child(1) > strong > a",
               ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
@@ -1563,7 +1563,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 118,
+            "nodes": 117,
             "firstTargets": [
               ".cluster > li:nth-child(1) > strong > a",
               ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
@@ -1602,7 +1602,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 69811064 .ytmVideoInfoVideoTitle"
+              "#\\39 39306191 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -1616,7 +1616,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 69811064 #movie_player"
+              "#\\39 39306191 #movie_player"
             ]
           }
         ],
@@ -2306,7 +2306,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 86920930 .ytmVideoInfoVideoTitle"
+              "#\\33 87857893 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -2320,7 +2320,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 86920930 #movie_player"
+              "#\\33 87857893 #movie_player"
             ]
           }
         ],
