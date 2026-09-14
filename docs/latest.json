@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-09-07T10:55:29.931Z",
+  "siteGenerated": "2026-09-14T11:08:42.305Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-frontrange.edu",
   "report": {
-    "generated": "2026-09-07T10:55:29.231Z",
+    "generated": "2026-09-14T11:08:41.720Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -15,8 +15,24 @@
         "title": "FRCC | Front Range Community College",
         "finalUrl": "https://frontrange.edu/",
         "slug": "home",
-        "violations": [],
-        "violationTotal": 0,
+        "violations": [
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "help": "Links must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag244",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".button-link--primary.button-link[href=\"\"]"
+            ]
+          }
+        ],
+        "violationTotal": 1,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -192,7 +208,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 18966895 .ytmVideoInfoVideoTitle"
+              "#\\33 04552951 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -206,7 +222,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 18966895 #movie_player"
+              "#\\33 04552951 #movie_player"
             ]
           }
         ],
@@ -259,7 +275,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 23317375 .ytmVideoInfoVideoTitle"
+              "#\\39 56605302 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -273,7 +289,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 23317375 #movie_player"
+              "#\\39 56605302 #movie_player"
             ]
           },
           {
@@ -287,7 +303,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 23317375 .ytmVideoInfoChannelAvatar"
+              "#\\39 56605302 .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
@@ -378,7 +394,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 65304916 .ytmVideoInfoVideoTitle"
+              "#\\31 0702240 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -392,7 +408,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 65304916 #movie_player"
+              "#\\31 0702240 #movie_player"
             ]
           }
         ],
@@ -462,8 +478,8 @@
             "nodes": 3,
             "firstTargets": [
               "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 .comment-box",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1788778171285__18",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1788778171286__23"
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1789383761718__18",
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1789383761718__23"
             ]
           },
           {
@@ -492,19 +508,6 @@
             "nodes": 1,
             "firstTargets": [
               "#ou-search-div > .cluster.gap-s > li:nth-child(4) > .search.drawer-right.drawer > .p-2xl.flow > form > .search__input-wrapper.items-center.gap-s > input"
-            ]
-          },
-          {
-            "id": "link-in-text-block",
-            "impact": "serious",
-            "help": "Links must be distinguishable without relying on color",
-            "wcag": [
-              "wcag2a",
-              "wcag141"
-            ],
-            "nodes": 1,
-            "firstTargets": [
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 a"
             ]
           }
         ]
@@ -983,9 +986,9 @@
             ],
             "nodes": 47,
             "firstTargets": [
-              ".cluster > li:nth-child(1) > strong > a",
-              ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
-              ".cluster > li:nth-child(3) > a[href$=\"mycourses.cccs.edu/\"][rel=\"noopener\"][target=\"_blank\"]"
+              ".cluster.reset > li:nth-child(1) > strong > a",
+              ".cluster.reset > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
+              ".cluster.reset > li:nth-child(3) > a[href$=\"mycourses.cccs.edu/\"][rel=\"noopener\"][target=\"_blank\"]"
             ]
           },
           {
@@ -998,7 +1001,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#ou-search-div > .cluster.gap-s > li:nth-child(4) > .search.drawer-right.drawer > .p-2xl.flow > form > .search__input-wrapper.items-center.gap-s > input"
+              "#ou-search-div > .cluster.gap-s.reset > li:nth-child(4) > .search.drawer-right.drawer > .p-2xl.flow > form > .search__input-wrapper.items-center.gap-s > input"
             ]
           }
         ]
@@ -1563,7 +1566,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 117,
+            "nodes": 142,
             "firstTargets": [
               ".cluster > li:nth-child(1) > strong > a",
               ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
@@ -1602,7 +1605,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 39306191 .ytmVideoInfoVideoTitle"
+              "#\\35 89505 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -1616,7 +1619,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 39306191 #movie_player"
+              "#\\35 89505 #movie_player"
             ]
           }
         ],
@@ -2306,7 +2309,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 87857893 .ytmVideoInfoVideoTitle"
+              "#\\38 61110616 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -2320,7 +2323,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 87857893 #movie_player"
+              "#\\38 61110616 #movie_player"
             ]
           }
         ],
