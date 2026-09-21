@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-09-14T11:08:42.305Z",
+  "siteGenerated": "2026-09-21T11:18:20.547Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-frontrange.edu",
   "report": {
-    "generated": "2026-09-14T11:08:41.720Z",
+    "generated": "2026-09-21T11:18:19.367Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -15,24 +15,8 @@
         "title": "FRCC | Front Range Community College",
         "finalUrl": "https://frontrange.edu/",
         "slug": "home",
-        "violations": [
-          {
-            "id": "link-name",
-            "impact": "serious",
-            "help": "Links must have discernible text",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
-            "wcag": [
-              "wcag2a",
-              "wcag244",
-              "wcag412"
-            ],
-            "nodes": 1,
-            "firstTargets": [
-              ".button-link--primary.button-link[href=\"\"]"
-            ]
-          }
-        ],
-        "violationTotal": 1,
+        "violations": [],
+        "violationTotal": 0,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -208,7 +192,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 04552951 .ytmVideoInfoVideoTitle"
+              "#\\34 85210551 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -222,7 +206,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 04552951 #movie_player"
+              "#\\34 85210551 #movie_player"
             ]
           }
         ],
@@ -275,7 +259,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 56605302 .ytmVideoInfoVideoTitle"
+              "#\\36 19318343 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -289,7 +273,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 56605302 #movie_player"
+              "#\\36 19318343 #movie_player"
             ]
           },
           {
@@ -303,7 +287,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 56605302 .ytmVideoInfoChannelAvatar"
+              "#\\36 19318343 .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
@@ -394,7 +378,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 0702240 .ytmVideoInfoVideoTitle"
+              "#\\31 97520467 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -408,7 +392,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 0702240 #movie_player"
+              "#\\31 97520467 #movie_player"
             ]
           }
         ],
@@ -478,8 +462,8 @@
             "nodes": 3,
             "firstTargets": [
               "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 .comment-box",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1789383761718__18",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1789383761718__23"
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1789989153295__18",
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1789989153296__23"
             ]
           },
           {
@@ -1605,7 +1589,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 89505 .ytmVideoInfoVideoTitle"
+              "#\\35 10520664 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -1619,7 +1603,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 89505 #movie_player"
+              "#\\35 10520664 #movie_player"
             ]
           }
         ],
@@ -2309,7 +2293,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 61110616 .ytmVideoInfoVideoTitle"
+              "#\\39 95562953 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -2323,7 +2307,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 61110616 #movie_player"
+              "#\\39 95562953 #movie_player"
             ]
           }
         ],
@@ -3097,7 +3081,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 51,
+            "nodes": 50,
             "firstTargets": [
               ".cluster > li:nth-child(1) > strong > a",
               ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
