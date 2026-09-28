@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-09-21T11:18:20.547Z",
+  "siteGenerated": "2026-09-28T12:12:07.383Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-frontrange.edu",
   "report": {
-    "generated": "2026-09-21T11:18:19.367Z",
+    "generated": "2026-09-28T12:12:06.150Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -192,7 +192,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\34 85210551 .ytmVideoInfoVideoTitle"
+              "#\\39 50189857 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -206,7 +206,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\34 85210551 #movie_player"
+              "#\\39 50189857 #movie_player"
             ]
           }
         ],
@@ -259,7 +259,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\36 19318343 .ytmVideoInfoVideoTitle"
+              "#\\31 50701449 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -273,7 +273,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\36 19318343 #movie_player"
+              "#\\31 50701449 #movie_player"
             ]
           },
           {
@@ -287,7 +287,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\36 19318343 .ytmVideoInfoChannelAvatar"
+              "#\\31 50701449 .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
@@ -378,7 +378,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 97520467 .ytmVideoInfoVideoTitle"
+              "#\\32 17999975 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -392,7 +392,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 97520467 #movie_player"
+              "#\\32 17999975 #movie_player"
             ]
           }
         ],
@@ -462,8 +462,8 @@
             "nodes": 3,
             "firstTargets": [
               "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 .comment-box",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1789989153295__18",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1789989153296__23"
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1790597201738__18",
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1790597201738__23"
             ]
           },
           {
@@ -1463,8 +1463,24 @@
         "title": "Strategic Marketing & Communications | Front Range Community College",
         "finalUrl": "https://frontrange.edu/marketing/",
         "slug": "marketing",
-        "violations": [],
-        "violationTotal": 0,
+        "violations": [
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "help": "Links must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag244",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(4) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]"
+            ]
+          }
+        ],
+        "violationTotal": 1,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -1589,7 +1605,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 10520664 .ytmVideoInfoVideoTitle"
+              "#\\33 20620075 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -1603,7 +1619,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 10520664 #movie_player"
+              "#\\33 20620075 #movie_player"
             ]
           }
         ],
@@ -2293,7 +2309,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 95562953 .ytmVideoInfoVideoTitle"
+              "#\\35 77000441 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -2307,7 +2323,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 95562953 #movie_player"
+              "#\\35 77000441 #movie_player"
             ]
           }
         ],
