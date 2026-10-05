@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-09-28T12:12:07.383Z",
+  "siteGenerated": "2026-10-05T12:54:17.141Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-frontrange.edu",
   "report": {
-    "generated": "2026-09-28T12:12:06.150Z",
+    "generated": "2026-10-05T12:54:16.273Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -192,7 +192,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 50189857 .ytmVideoInfoVideoTitle"
+              "#\\32 50392129 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -206,7 +206,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\39 50189857 #movie_player"
+              "#\\32 50392129 #movie_player"
             ]
           }
         ],
@@ -259,7 +259,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 50701449 .ytmVideoInfoVideoTitle"
+              "#\\36 84143597 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -273,7 +273,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 50701449 #movie_player"
+              "#\\36 84143597 #movie_player"
             ]
           },
           {
@@ -287,7 +287,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\31 50701449 .ytmVideoInfoChannelAvatar"
+              "#\\36 84143597 .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
@@ -378,7 +378,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 17999975 .ytmVideoInfoVideoTitle"
+              "#\\37 18963990 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -392,7 +392,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 17999975 #movie_player"
+              "#\\37 18963990 #movie_player"
             ]
           }
         ],
@@ -462,8 +462,8 @@
             "nodes": 3,
             "firstTargets": [
               "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 .comment-box",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1790597201738__18",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1790597201738__23"
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1791204440509__18",
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1791204440509__23"
             ]
           },
           {
@@ -1474,13 +1474,17 @@
               "wcag244",
               "wcag412"
             ],
-            "nodes": 1,
+            "nodes": 5,
             "firstTargets": [
-              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(4) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]"
+              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(4) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]",
+              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(12) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]",
+              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(13) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]",
+              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(14) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]",
+              "p:nth-child(1) > a:nth-child(2)"
             ]
           }
         ],
-        "violationTotal": 1,
+        "violationTotal": 5,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -1605,7 +1609,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 20620075 .ytmVideoInfoVideoTitle"
+              "#\\33 91430058 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -1619,7 +1623,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\33 20620075 #movie_player"
+              "#\\33 91430058 #movie_player"
             ]
           }
         ],
@@ -2309,7 +2313,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 77000441 .ytmVideoInfoVideoTitle"
+              "#\\33 34341694 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -2323,7 +2327,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\35 77000441 #movie_player"
+              "#\\33 34341694 #movie_player"
             ]
           }
         ],
