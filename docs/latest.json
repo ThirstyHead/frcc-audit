@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-10-12T13:43:19.775Z",
+  "siteGenerated": "2026-10-19T11:27:07.903Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-frontrange.edu",
   "report": {
-    "generated": "2026-10-12T13:43:19.224Z",
+    "generated": "2026-10-19T11:27:07.180Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -26,7 +26,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 35,
+            "nodes": 32,
             "firstTargets": [
               ".cluster > li:nth-child(1) > strong > a",
               ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
@@ -192,7 +192,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\37 30434206 .ytmVideoInfoVideoTitle"
+              "#\\31 27976581 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -206,7 +206,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\37 30434206 #movie_player"
+              "#\\31 27976581 #movie_player"
             ]
           }
         ],
@@ -259,7 +259,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 23226417 .ytmVideoInfoVideoTitle"
+              "#\\39 94696782 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -273,7 +273,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 23226417 #movie_player"
+              "#\\39 94696782 #movie_player"
             ]
           },
           {
@@ -287,12 +287,25 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 23226417 .ytmVideoInfoChannelAvatar"
+              "#\\39 94696782 .ytmVideoInfoChannelAvatar"
             ]
           }
         ],
         "violationTotal": 3,
         "incomplete": [
+          {
+            "id": "aria-valid-attr-value",
+            "impact": "critical",
+            "help": "ARIA attributes must conform to valid values",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "iframe[title=\"FRCC Quick Facts 2024-2025\"] button[aria-label=\"Accessible view\"]"
+            ]
+          },
           {
             "id": "color-contrast",
             "impact": "serious",
@@ -378,7 +391,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 99709528 .ytmVideoInfoVideoTitle"
+              "#\\39 91457528 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -392,7 +405,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\32 99709528 #movie_player"
+              "#\\39 91457528 #movie_player"
             ]
           }
         ],
@@ -462,8 +475,8 @@
             "nodes": 3,
             "firstTargets": [
               "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 .comment-box",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1791812284606__18",
-              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1791812284610__23"
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1792408930657__18",
+              "#form_b1bc2bf6-b1e3-42e6-910c-69395ba89251 #sky-id-gen__1792408930657__23"
             ]
           },
           {
@@ -1463,28 +1476,8 @@
         "title": "Strategic Marketing & Communications | Front Range Community College",
         "finalUrl": "https://frontrange.edu/marketing/",
         "slug": "marketing",
-        "violations": [
-          {
-            "id": "link-name",
-            "impact": "serious",
-            "help": "Links must have discernible text",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
-            "wcag": [
-              "wcag2a",
-              "wcag244",
-              "wcag412"
-            ],
-            "nodes": 5,
-            "firstTargets": [
-              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(4) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]",
-              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(12) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]",
-              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(13) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]",
-              "div[data-animate=\"data-animate\"][data-animation=\"fade-in-up\"]:nth-child(14) > .flow-space-s.flow > .text-step-1 > p:nth-child(1) > a[rel=\"noopener\"][target=\"_blank\"]",
-              "p:nth-child(1) > a:nth-child(2)"
-            ]
-          }
-        ],
-        "violationTotal": 5,
+        "violations": [],
+        "violationTotal": 0,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -1609,7 +1602,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\36 58727724 .ytmVideoInfoVideoTitle"
+              "#\\32 09273875 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -1623,7 +1616,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\36 58727724 #movie_player"
+              "#\\32 09273875 #movie_player"
             ]
           }
         ],
@@ -1968,8 +1961,23 @@
         "title": "Front Range Community College - Register for Classes",
         "finalUrl": "https://frontrange.edu/programs-courses/register/",
         "slug": "programs-courses-register",
-        "violations": [],
-        "violationTotal": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "#countdown_iframe_946212 .text"
+            ]
+          }
+        ],
+        "violationTotal": 1,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -1979,11 +1987,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 42,
+            "nodes": 68,
             "firstTargets": [
-              ".cluster.reset > li:nth-child(1) > strong > a",
-              ".cluster.reset > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
-              ".cluster.reset > li:nth-child(3) > a[href$=\"mycourses.cccs.edu/\"][rel=\"noopener\"][target=\"_blank\"]"
+              ".cluster > li:nth-child(1) > strong > a",
+              ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
+              ".cluster > li:nth-child(3) > a[href$=\"mycourses.cccs.edu/\"][rel=\"noopener\"][target=\"_blank\"]"
             ]
           },
           {
@@ -1996,7 +2004,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#ou-search-div > .cluster.gap-s.reset > li:nth-child(4) > .search.drawer-right.drawer > .p-2xl.flow > form > .search__input-wrapper.items-center.gap-s > input"
+              "#ou-search-div > .cluster.gap-s > li:nth-child(4) > .search.drawer-right.drawer > .p-2xl.flow > form > .search__input-wrapper.items-center.gap-s > input"
             ]
           }
         ]
@@ -2313,7 +2321,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 99981241 .ytmVideoInfoVideoTitle"
+              "#\\32 76034842 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -2327,7 +2335,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#\\38 99981241 #movie_player"
+              "#\\32 76034842 #movie_player"
             ]
           }
         ],
@@ -3063,7 +3071,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 55,
+            "nodes": 62,
             "firstTargets": [
               ".cluster > li:nth-child(1) > strong > a",
               ".cluster > li:nth-child(2) > a[rel=\"noopener\"][target=\"_blank\"]",
